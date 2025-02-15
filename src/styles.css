@@ -1,0 +1,54 @@
+body {
+    background: #e7eaf6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .weather {
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+  header {
+    position: relative;
+    top: 5px;
+    left: 115px;
+  }
+  .degree {
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    right: -345px;
+    top: -65px;
+  }
+  .current-weather {
+    margin: 5px;
+  }
+  footer {
+    margin: 5px;
+  }
+  a {
+    color: #38598b;
+  }
+  a:hover {
+    color: blue;
+  }
+  strong {
+    color: #a2a8d3;
+    text-decoration: underline;
+  }
+  input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid;
+  }
+  input[type="submit"] {
+    background: #113f67;
+    color: white;
+  }
+  input[type="submit"]:hover {
+    background: white;
+    color: #113f67;
+  }
+  
