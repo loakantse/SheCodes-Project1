@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
   <body>
@@ -21,11 +22,12 @@
           <div>
             <h1 id="city">Paris</h1>
             <p>
-              Saturday 15:32, moderate rain <br />
+              Saturday 15:32, <span class="description"> rain</span> <br />
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
-          <div class="degree">☀️ 14°C</div>
+          <div class=" weather-icon" id="weather-icon">☀️</div>
+          <div class="degree" id="degree"> 14°C</div>
         </div>
       </main>
       <footer>
