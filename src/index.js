@@ -7,6 +7,9 @@ let humidityElement = document.querySelector("#humidity")
 let windElement = document.querySelector("#wind")
 let timeElement = document.querySelector("#time")
 let date = new Date(response.data.time * 1000)
+let iconElement = document.querySelector("#weather-icon")
+
+iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`
 
 console.log(response.data)
 temperatureElement.innerHTML = Math.round(temperature) + "°C"
@@ -24,6 +27,10 @@ function formatDate(date) {
     let day = days[date.getDay()]
 
     return `${day} ${hours}:${minutes}`
+
+    if(minutes < 10) {
+        minutes = `0${minutes}`
+    }
 }
 
 function searchCity(city) {
